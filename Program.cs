@@ -4,6 +4,9 @@ using vmp_cinema.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddScoped<IFilmService, FilmService>();
+builder.Services.AddScoped<ISeanceService, SeanceService>();
+builder.Services.AddScoped<IBookingService, BookingService>();
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));

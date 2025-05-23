@@ -1,4 +1,7 @@
+using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 public class Booking
 {
@@ -9,5 +12,6 @@ public class Booking
 
     public int SeanceId { get; set; }
 
+    [ValidateNever]
     public Seance Seance { get; set; } = null!;
 }

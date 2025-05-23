@@ -1,9 +1,11 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using vmp_cinema.Data;
 
 namespace vmp_lab1.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class FilmsController : Controller
     {
         private readonly IFilmService _filmService;

@@ -1,0 +1,110 @@
+﻿@{
+    ViewData["Title"] = "Головна";
+}
+
+<h1 class="text-center mt-4">Кінотеатр "Сучасний"</h1>
+
+<div class="container mt-5">
+    <h2 class="mb-4">Фільми у прокаті</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="/images/1.jpg" class="card-img-top" alt="Фільм 1">
+                <div class="card-body">
+                    <h5 class="card-title">Шлях героя</h5>
+                    <p class="card-text">Епічний бойовик про боротьбу зі злом у фантастичному світі.</p>
+                    <a href="#" class="btn btn-primary">Детальніше</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="/images/2.jpg" class="card-img-top" alt="Фільм 2">
+                <div class="card-body">
+                    <h5 class="card-title">Романтика в Парижі</h5>
+                    <p class="card-text">Мелодрама про кохання двох молодих людей у серці Франції.</p>
+                    <a href="#" class="btn btn-primary">Детальніше</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="/images/3.jpg" class="card-img-top" alt="Фільм 3">
+                <div class="card-body">
+                    <h5 class="card-title">Місія: Зникнення</h5>
+                    <p class="card-text">Трилер про секретного агента, який розслідує таємничі зникнення.</p>
+                    <a href="#" class="btn btn-primary">Детальніше</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="/images/4.jpg" class="card-img-top" alt="Фільм 4">
+                <div class="card-body">
+                    <h5 class="card-title">Загублений острів</h5>
+                    <p class="card-text">Пригодницький фільм про виживання на незвіданому острові.</p>
+                    <a href="#" class="btn btn-primary">Детальніше</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="/images/5.jpg" class="card-img-top" alt="Фільм 5">
+                <div class="card-body">
+                    <h5 class="card-title">Місячна ніч</h5>
+                    <p class="card-text">Фантастична драма про інопланетні події у сучасному світі.</p>
+                    <a href="#" class="btn btn-primary">Детальніше</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="/images/6.jpg" class="card-img-top" alt="Фільм 6">
+                <div class="card-body">
+                    <h5 class="card-title">Комедія року</h5>
+                    <p class="card-text">Легка комедія про родинні пригоди та несподівані повороти.</p>
+                    <a href="#" class="btn btn-primary">Детальніше</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="mt-5">Прайс-лист фільмів</h2>
+    <p>Ціни залежать від фільму, формату та часу показу.</p>
+
+    <table class="table table-bordered">
+        <thead class="table-light">
+            <tr>
+                <th>Назва фільму</th>
+                <th>Час сеансу</th>
+                <th>Формат</th>
+                <th>Ціна</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Шлях героя</td>
+                <td>14:00</td>
+                <td>2D</td>
+                <td>110 грн</td>
+            </tr>
+            <tr>
+                <td>Романтика в Парижі</td>
+                <td>18:00</td>
+                <td>3D</td>
+                <td>160 грн</td>
+            </tr>
+            <tr>
+                <td>Місія: Зникнення</td>
+                <td>21:00</td>
+                <td>3D</td>
+                <td>180 грн</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="mt-4">
+        <input type="text" class="form-control mb-2" placeholder="Пошук фільму...">
+        <button class="btn btn-success">Знайти</button>
+    </div>
+</div>

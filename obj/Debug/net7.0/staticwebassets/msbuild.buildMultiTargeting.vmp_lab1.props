@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\vmp_lab1.props" />
+</Project>
